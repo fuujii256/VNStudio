@@ -1,0 +1,79 @@
+site_name: VNStudio ドキュメント
+site_description: ノベルゲームエンジン VNStudio のコマンドリファレンスと使い方
+site_url: https://fuujii256.github.io/VNStudio/
+repo_url: https://github.com/fuujii256/VNStudio
+repo_name: fuujii256/VNStudio
+edit_uri: ""
+copyright: "&copy; しるふぁ工房"
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: material/email-outline
+      link: https://fuujii256.github.io/sylfa-studio/contact.html
+      name: お問い合わせ (しるふぁ工房)
+
+nav:
+  - ホーム: index.md
+  - はじめに:
+      - インストール: getting-started/install.md
+      - SmartScreen の警告が出たとき: getting-started/smartscreen.md
+      - はじめてのスクリプト: getting-started/first-project.md
+  - コマンドリファレンス:
+      - 目次: reference/index.md
+      - スクリプトの基本構文: reference/syntax.md
+      - テキスト・待機: reference/commands/text.md
+      - 背景: reference/commands/background.md
+      - キャラクター: reference/commands/character.md
+      - 画面演出: reference/commands/effect.md
+      - サウンド: reference/commands/audio.md
+      - フロー制御・変数: reference/commands/flow.md
+      - 選択肢: reference/commands/choice.md
+      - セーブ・メニュー・CG: reference/commands/system.md
+      - 設定 (config): reference/commands/config.md
+      - XZ80 専用設定: reference/commands/xz80.md
+      - 旧コマンド・実験的機能: reference/commands/legacy.md
+      - ランタイム対応表: reference/runtime-support.md
+      - MML 書式: reference/mml.md
+  - FAQ: faq.md
+  - お問い合わせ: support.md
