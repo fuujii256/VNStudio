@@ -1,0 +1,68 @@
+{
+    "schema":  1,
+    "channel":  "stable",
+    "generatedAt":  "2026-09-24T09:29:01Z",
+    "components":  {
+                       "ext.ppsspp":  {
+                                          "version":  "1.20.4",
+                                          "url":  "https://www.ppsspp.org/files/1_20_4/ppsspp_win.zip",
+                                          "sha256":  "a60f04ebdb0b5f1655422bd7f88349a46999b17ad5115d6ddb290c3934bd5163",
+                                          "size":  27658759,
+                                          "title":  "PPSSPP (PSP エミュレータ、公式配布)",
+                                          "license":  "GPL-2.0-or-later",
+                                          "sourceUrl":  "https://github.com/hrydgard/ppsspp"
+                                      },
+                       "ext.rb-cli":  {
+                                          "version":  "2026-08-08-17-32",
+                                          "url":  "https://github.com/danifunker/rusty-backup/releases/download/v2026-08-08-17-32/rb-cli-windows-x64-2026-08-08-17-32.zip",
+                                          "sha256":  "1164bef4d82f53dc4c4042246937a86de0178f21223251c6fd1a48a6577926c7",
+                                          "size":  12525541,
+                                          "title":  "rb-cli (HDF 編集ツール、公式配布)",
+                                          "license":  "AGPL-3.0",
+                                          "sourceUrl":  "https://github.com/danifunker/rusty-backup"
+                                      },
+                       "runtime.msx":  {
+                                           "version":  "0.91.0-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.91.0-beta/VNStudio-runtime-msx-0.91.0-beta.zip",
+                                           "sha256":  "a8872397859c4bfdeeb85018e198917df71792cbb6469dc052e71ffa1217ec7f",
+                                           "size":  62861,
+                                           "title":  "MSX ランタイム (V9990)",
+                                           "license":  "VNStudio EULA",
+                                           "dependencies":  [
+                                                                "tools.bundle"
+                                                            ]
+                                       },
+                       "runtime.psp":  {
+                                           "version":  "0.91.0-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-psp-v0.91.0-beta/VNStudio-runtime-psp-0.91.0-beta.zip",
+                                           "sha256":  "82084ed7049293b2ca690ce857b0b38a1d42f0533a8e26aba51a03a3659d0047",
+                                           "size":  7302223,
+                                           "title":  "PSP ランタイム",
+                                           "license":  "VNStudio EULA",
+                                           "dependencies":  [
+                                                                "tools.bundle",
+                                                                "ext.ppsspp"
+                                                            ]
+                                       },
+                       "runtime.x68000":  {
+                                              "version":  "0.91.0-beta",
+                                              "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-x68000-v0.91.0-beta/VNStudio-runtime-x68000-0.91.0-beta.zip",
+                                              "sha256":  "9cd866023089887c8d8351636299a0ff02eb6daf11ef1c1c0a380c5ea14969bc",
+                                              "size":  62628,
+                                              "title":  "X68000 ランタイム",
+                                              "license":  "VNStudio EULA",
+                                              "dependencies":  [
+                                                                   "tools.bundle",
+                                                                   "ext.rb-cli"
+                                                               ]
+                                          },
+                       "tools.bundle":  {
+                                            "version":  "0.91.0-beta",
+                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.91.0-beta/VNStudio-tools-bundle-0.91.0-beta-win-x64.zip",
+                                            "sha256":  "86eae255636e41aba2f6b809cfb026e9c5a99d11bcdf53ae8766b11316fa74f4",
+                                            "size":  34176277,
+                                            "title":  "VNStudio 共通ツール",
+                                            "license":  "VNStudio EULA / Node.js: MIT"
+                                        }
+                   }
+}

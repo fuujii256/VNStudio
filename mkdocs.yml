@@ -58,6 +58,7 @@ nav:
   - はじめに:
       - インストール: getting-started/install.md
       - SmartScreen の警告が出たとき: getting-started/smartscreen.md
+      - ほかのランタイムを使う: getting-started/runtimes.md
       - はじめてのスクリプト: getting-started/first-project.md
   - コマンドリファレンス:
       - 目次: reference/index.md

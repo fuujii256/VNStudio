@@ -6,15 +6,18 @@ VNStudio は、レトロスタイルとモダンな演出を組み合わせた�
 | ランタイム | 画面 | 入手方法 |
 |---|---|---|
 | Windows (Unity) | 1920×1080 基準 (16:9) | 基本セットに同梱 |
-| XZ80 | 256×212 / 384×240 | 今後のバージョンで対応予定 |
-| MSX (V9990) | 384×240 | 同上 |
-| PSP | 480×272 | 同上 |
-| X68000 | 320×256 | 同上 |
+| PSP | 480×272 | 初めて選んだときに自動でダウンロード |
+| X68000 | 320×256 | 同上 (RetroArch などの準備が必要) |
+| MSX (V9990) | 384×240 | 同上 (openMSX などの準備が必要) |
+| XZ80 | 256×212 / 384×240 | 準備中 |
+
+ダウンロード型のランタイムの準備は [ほかのランタイムを使う](getting-started/runtimes.md) を参照してください。
 
 ## まずはここから
 
 - [インストール](getting-started/install.md)
 - [SmartScreen の警告が出たとき](getting-started/smartscreen.md)
+- [ほかのランタイムを使う](getting-started/runtimes.md)
 - [はじめてのスクリプト](getting-started/first-project.md)
 
 ## リファレンス
