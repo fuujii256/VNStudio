@@ -1,8 +1,16 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-09-24T09:29:01Z",
+    "generatedAt":  "2026-09-25T03:55:41Z",
     "components":  {
+                       "core":  {
+                                    "version":  "0.92.0-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.0-beta/VNStudio-core-0.92.0-beta-win-x64.zip",
+                                    "sha256":  "9a6950bdb9d447efdcec3d9c69aeb05b0756240f914018aa4ba27f7dfff69b51",
+                                    "size":  80485059,
+                                    "title":  "VNStudio エディタ本体",
+                                    "license":  "VNStudio EULA"
+                                },
                        "ext.ppsspp":  {
                                           "version":  "1.20.4",
                                           "url":  "https://www.ppsspp.org/files/1_20_4/ppsspp_win.zip",
@@ -22,34 +30,42 @@
                                           "sourceUrl":  "https://github.com/danifunker/rusty-backup"
                                       },
                        "runtime.msx":  {
-                                           "version":  "0.91.0-beta",
-                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.91.0-beta/VNStudio-runtime-msx-0.91.0-beta.zip",
-                                           "sha256":  "a8872397859c4bfdeeb85018e198917df71792cbb6469dc052e71ffa1217ec7f",
-                                           "size":  62861,
-                                           "title":  "MSX ランタイム (V9990)",
+                                           "version":  "0.92.0-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.0-beta/VNStudio-runtime-msx-0.92.0-beta.zip",
+                                           "sha256":  "82994871d1fda26da594aed1cce43e52b216620836dfaf30492d2f104458d96c",
+                                           "size":  62948,
+                                           "title":  "MSX ランタイム (V9990) (α版)",
                                            "license":  "VNStudio EULA",
                                            "dependencies":  [
                                                                 "tools.bundle"
                                                             ]
                                        },
                        "runtime.psp":  {
-                                           "version":  "0.91.0-beta",
-                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-psp-v0.91.0-beta/VNStudio-runtime-psp-0.91.0-beta.zip",
-                                           "sha256":  "82084ed7049293b2ca690ce857b0b38a1d42f0533a8e26aba51a03a3659d0047",
-                                           "size":  7302223,
-                                           "title":  "PSP ランタイム",
+                                           "version":  "0.92.0-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-psp-v0.92.0-beta/VNStudio-runtime-psp-0.92.0-beta.zip",
+                                           "sha256":  "8df00baa1f2b402dd2bacc9af188d4df4b5b4dcc3cf583fc536d88e918914711",
+                                           "size":  7304072,
+                                           "title":  "PSP ランタイム (α版)",
                                            "license":  "VNStudio EULA",
                                            "dependencies":  [
                                                                 "tools.bundle",
                                                                 "ext.ppsspp"
                                                             ]
                                        },
+                       "runtime.unity":  {
+                                             "version":  "0.92.0-beta",
+                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-unity-v0.92.0-beta/VNStudio-runtime-unity-0.92.0-beta-win-x64.zip",
+                                             "sha256":  "e08b9b94ccb364bc37f600f97ddf565ea8717718c046cb3a33ce6d0a686e7e9e",
+                                             "size":  47901286,
+                                             "title":  "Windows (Unity) ランタイム",
+                                             "license":  "VNStudio EULA"
+                                         },
                        "runtime.x68000":  {
-                                              "version":  "0.91.0-beta",
-                                              "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-x68000-v0.91.0-beta/VNStudio-runtime-x68000-0.91.0-beta.zip",
-                                              "sha256":  "9cd866023089887c8d8351636299a0ff02eb6daf11ef1c1c0a380c5ea14969bc",
-                                              "size":  62628,
-                                              "title":  "X68000 ランタイム",
+                                              "version":  "0.92.0-beta",
+                                              "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-x68000-v0.92.0-beta/VNStudio-runtime-x68000-0.92.0-beta.zip",
+                                              "sha256":  "b2db4dcc991897bd22d139480a6fceba0e5e3fadede9e9a1a08aeece07caac5e",
+                                              "size":  62805,
+                                              "title":  "X68000 ランタイム (α版)",
                                               "license":  "VNStudio EULA",
                                               "dependencies":  [
                                                                    "tools.bundle",
@@ -57,10 +73,10 @@
                                                                ]
                                           },
                        "tools.bundle":  {
-                                            "version":  "0.91.0-beta",
-                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.91.0-beta/VNStudio-tools-bundle-0.91.0-beta-win-x64.zip",
-                                            "sha256":  "86eae255636e41aba2f6b809cfb026e9c5a99d11bcdf53ae8766b11316fa74f4",
-                                            "size":  34176277,
+                                            "version":  "0.92.0-beta",
+                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.92.0-beta/VNStudio-tools-bundle-0.92.0-beta-win-x64.zip",
+                                            "sha256":  "0ddaf7a89164fb1fbbd398d0bb040676959de7681d878e4cc458d687475440ec",
+                                            "size":  34176557,
                                             "title":  "VNStudio 共通ツール",
                                             "license":  "VNStudio EULA / Node.js: MIT"
                                         }
