@@ -42,7 +42,9 @@
 
 X68000 のプレビューには、エミュレータ **RetroArch** と **PX68k コア** を使います。次のものを用意してください。
 
-1. [RetroArch](https://www.retroarch.com/) をインストールします。
+1. RetroArch をインストールします。libretro 公式の配布サーバー [buildbot.libretro.com](https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/) から `RetroArch-Win64-setup.exe` をダウンロードして実行してください。
+    - 検索で出てくる「RetroArch ダウンロード」系のサイトには、公式ではないものや広告の多いものがあります。上のリンク (公式) を使ってください。
+    - RetroArch のソースコードと公式情報は [GitHub の libretro/RetroArch](https://github.com/libretro/RetroArch) にあります (GitHub には Windows 版のインストーラーは置かれていません)。
 2. RetroArch を起動し、「オンラインアップデータ」→「コアダウンローダー」から **Sharp - X68000 (PX68k)** を入れます。
 3. RetroArch のフォルダにある `system\keropi` フォルダに、X68000 の `iplrom.dat` と `cgrom.dat` を置きます (フォルダがなければ作ります)。
 4. Human68k が起動する SASI 形式のハードディスクイメージ (HDF) を用意します。
@@ -67,7 +69,8 @@ MSX のプレビューには、エミュレータ **openMSX** を使います。
     - `C:\Program Files\openMSX\openmsx.exe` (インストーラーの既定の場所)
     - `%LOCALAPPDATA%\VNStudio\Tools\openMSX\openmsx.exe`
     - 環境変数 `VNSTUDIO_OPENMSX` に指定した場所
-2. Panasonic FS-A1GT のシステム ROM を、openMSX の `share\systemroms` フォルダ、または `ドキュメント\openMSX\share\systemroms` に置きます。
+2. Panasonic FS-A1GT のシステム ROM `fs-a1gt_firmware.rom` と `fs-a1gt_kanjifont.rom` を、openMSX の `share\systemroms` フォルダ、または `ドキュメント\openMSX\share\systemroms` に置きます。
+    - openMSX は ROM をファイル名ではなく中身で見分けます。VNStudio も同じ方法で確認し、足りないときは MSX を選んだときに不足しているファイル名を表示します。
 
 準備ができていないときは、MSX を選んだときに案内が表示されます。
 
