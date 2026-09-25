@@ -1,7 +1,7 @@
 # インストール
 
 !!! info "最新版"
-    最新版は [VNStudio 0.92.0-beta](https://github.com/fuujii256/VNStudio/releases/tag/v0.92.0-beta) です (ベータ版)。
+    最新版は [VNStudio 0.92.1-beta](https://github.com/fuujii256/VNStudio/releases/tag/v0.92.1-beta) です (ベータ版)。
 
 ## 動作環境
 
@@ -9,7 +9,7 @@
 
 ## インストールの手順
 
-1. [Releases](https://github.com/fuujii256/VNStudio/releases) から `VNStudio_<バージョン>.zip` をダウンロードします (例: `VNStudio_0.92.0-beta.zip`)。
+1. [Releases](https://github.com/fuujii256/VNStudio/releases) から `VNStudio_<バージョン>.zip` をダウンロードします (例: `VNStudio_0.92.1-beta.zip`)。
 2. **展開する前に**、zip を右クリック →「プロパティ」→「セキュリティ: 許可する」にチェック →「OK」を押します。詳しくは [SmartScreen の警告が出たとき](smartscreen.md) を参照してください。
 3. 好きな場所に展開します。
 4. 展開したフォルダの `VNStudio.exe` (または `START_VNStudio.bat`) をダブルクリックすると、エディタが起動します。
