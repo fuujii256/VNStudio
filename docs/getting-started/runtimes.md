@@ -9,7 +9,7 @@
 | ランタイム | 状態 | 利用者が用意するもの |
 |---|---|---|
 | PSP | α 版 | なし (エミュレータ PPSSPP も自動でダウンロードします) |
-| X68000 | α 版 | RetroArch と PX68k コア、X68000 の IPL/CG ROM、Human68k の起動 HDF |
+| X68000 | α 版 | RetroArch と PX68k コア、X68000 の IPL/CG ROM、Human68k 3.02 のシステムディスク (無償公開物。起動 HDF はエディタが作ります) |
 | MSX (V9990) | α 版 | openMSX、MSX turboR (Panasonic FS-A1GT) のシステム ROM |
 | XZ80 | α 版 (公開準備中) | — |
 
@@ -47,7 +47,10 @@ X68000 のプレビューには、エミュレータ **RetroArch** と **PX68k �
     - RetroArch のソースコードと公式情報は [GitHub の libretro/RetroArch](https://github.com/libretro/RetroArch) にあります (GitHub には Windows 版のインストーラーは置かれていません)。
 2. RetroArch を起動し、「オンラインアップデータ」→「コアダウンローダー」から **Sharp - X68000 (PX68k)** を入れます。
 3. RetroArch のフォルダにある `system\keropi` フォルダに、X68000 の `iplrom.dat` と `cgrom.dat` を置きます (フォルダがなければ作ります)。
-4. Human68k が起動する SASI 形式のハードディスクイメージ (HDF) を用意します。
+4. 起動用のハードディスクイメージ (HDF) を作ります。
+    1. [X68000 LIBRARY の「Human68k version 3.02 のシステムディスク」](http://retropc.net/x68000/software/sharp/human302/) から、**ディスクイメージ版** `HUMN302I.LZH` をダウンロードします (展開は不要です)。
+    2. X68000 を選んだときに表示される設定画面で、「Boot HDF template」の下の **「Human68k 3.02 から作成...」** を押し、ダウンロードした `HUMN302I.LZH` を選びます。
+    3. 利用条件を確認して「はい」を押すと、PX68k で起動する HDF (60MB) を自動で作り、設定に書き込みます。
 
 X68000 を初めて選んだとき、見つからなかった項目を指定する設定画面が表示されます。
 ゲームのファイルを HDF に書き込むためのツール **rb-cli** ([rusty-backup](https://github.com/danifunker/rusty-backup)、AGPL-3.0) は、公式の配布ページから自動でダウンロードします。
@@ -55,8 +58,12 @@ X68000 を初めて選んだとき、見つからなかった項目を指定す�
 !!! note "X68000 で使える機能"
     X68000 では、台詞の中の `\n` (改行) に対応していません。そのまま文字として表示されます (長い台詞は自動で折り返されます)。
 
+!!! note "Human68k の利用条件"
+    Human68k 3.02 は、シャープが無償公開したソフトウェアです。同梱の [許諾条件](http://retropc.net/x68000/software/sharp/license.htm) に従ってください。
+    シャープ X シリーズとそのエミュレータ上でのみ使え、作ったものの配布は無償に限られます。起動 HDF はプレビュー用です。有償の作品には同梱しないでください (VNStudio が書き出す X68000 の配布用ファイルには、HDF は含まれません)。
+
 !!! warning "ROM と HDF について"
-    X68000 の ROM と Human68k は VNStudio には含まれていません。ご自身で権利をお持ちのものを使ってください。
+    X68000 の ROM と Human68k は VNStudio には含まれていません。ROM はご自身で権利をお持ちのものを使ってください。
 
 ## MSX (V9990)
 
