@@ -4,7 +4,7 @@ VNStudio は、レトロスタイルとモダンな演出を組み合わせた�
 シンプルなスクリプトで台詞・背景・立ち絵・演出・分岐を書き、Windows (Unity) のほか、XZ80・MSX・PSP・X68000 向けのランタイムでも動かせます。
 
 - **ドキュメント・コマンドリファレンス**: <https://fuujii256.github.io/VNStudio/>
-- **ダウンロード**: [最新版 (0.92.3-beta)](https://github.com/fuujii256/VNStudio/releases/tag/v0.92.3-beta)
+- **ダウンロード**: [最新版 (0.92.4-beta)](https://github.com/fuujii256/VNStudio/releases/tag/v0.92.4-beta)
 - **お問い合わせ・不具合報告**: [しるふぁ工房 お問い合わせページ](https://fuujii256.github.io/sylfa-studio/contact.html)
 
 ## 動作環境
