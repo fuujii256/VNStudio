@@ -2,7 +2,7 @@
 
 # ランタイム対応表
 
-VNStudio 0.92.0-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
+VNStudio 0.92.7-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
 
 !!! warning "Windows (Unity) 以外のランタイムは α 版です"
     XZ80・MSX・PSP・X68000 のランタイムは α 版で、一部の機能が未実装です (下の表の × と —)。今後のバージョンで順次対応します。
@@ -20,7 +20,7 @@ VNStudio 0.92.0-beta 時点の、ランタイムごとのコマンド対応状�
 | [wait](commands/text.md#wait) | ○ | ○ | ○ | ○ | ○ |
 | [wait input](commands/text.md#wait-input) | ○ | ○ | ○ | ○ | ○ |
 | [clear](commands/text.md#clear) | ○ | ○ | ○ | ○ | ○ |
-| [end](commands/text.md#end) | ○ | ○ | ○ | ○ | ○ |
+| [end](commands/text.md#end) | × | ○ | ○ | ○ | ○ |
 
 ## 背景
 
@@ -64,6 +64,7 @@ VNStudio 0.92.0-beta 時点の、ランタイムごとのコマンド対応状�
 | [jump / goto](commands/flow.md#jump) | ○ | ○ | ○ | ○ | ○ |
 | [call / return](commands/flow.md#call) | ○ | ○ | ○ | ○ | ○ |
 | [int / set / add](commands/flow.md#int) | ○ | △ | △ | △ | △ |
+| [global](commands/flow.md#global) | ○ | × | × | × | × |
 | [if](commands/flow.md#if) | ○ | ○ | ○ | ○ | ○ |
 | [switch / case / default](commands/flow.md#switch) | ○ | ○ | ○ | ○ | ○ |
 

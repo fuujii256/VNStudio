@@ -2,7 +2,7 @@
 
 # コマンドリファレンス
 
-VNStudio 0.92.0-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
+VNStudio 0.92.7-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
 
 ## [テキスト・待機](commands/text.md)
 
@@ -56,6 +56,7 @@ VNStudio 0.92.0-beta のスクリプトコマンドの一覧です。書き方�
 | [`jump <ラベル名>`](commands/flow.md#jump) | 指定したラベルへ移動します。 |
 | [`call <ファイル名>`](commands/flow.md#call) | 別スクリプトを呼び出し、return で呼び出し元へ戻ります。 |
 | [`int <変数> = <式>`](commands/flow.md#int) | 整数変数を宣言・代入・加算します。 |
+| [`global <int|float|string> <名前> = <初期値>`](commands/flow.md#global) | 再起動後も残る「プロフィール変数」を宣言します。 |
 | [`if <変数> <演算子> <値> <ラベル>`](commands/flow.md#if) | 条件が成立したときに指定ラベルへ移動します。 |
 | [`switch <変数>`](commands/flow.md#switch) | 変数の値と一致する case へ分岐します。 |
 

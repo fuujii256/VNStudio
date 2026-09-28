@@ -51,10 +51,10 @@ choice
 
 ```text
 ui_choice
-"選択肢" [x] [y] [size] [color] -> <ラベル>
+"選択肢" -> <ラベル> [x] [y] [size] [color]
 ```
 
-タイトル画面やメニュー画面などで使う、位置を指定できる選択肢です。
+タイトル画面やメニュー画面などで使う、位置を指定できる選択肢です。座標・文字サイズ・色は、`-> ラベル` の後ろに続けて指定します。矢印の前に `"選択肢" [x] [y] [size] [color] -> ラベル` の順で書く形式も使えます。
 
 - 色を省略すると、`config text color` の色になります。
 - `slot=N` を付けると、セーブデータのサムネイルと日時を表示します (セーブ画面用)。
@@ -63,8 +63,8 @@ ui_choice
 
 ```text
 ui_choice
-"Start" 0 100 36 #FFFFFF -> LabelStart
-"Exit"  0 200 24 #AAAAAA -> LabelExit
+"Start" -> LabelStart 0 100 36 #FFFFFF
+"Exit"  -> LabelExit  0 200 24 #AAAAAA
 ```
 
 **対応ランタイム**
