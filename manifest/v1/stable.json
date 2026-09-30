@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-09-30T06:15:10Z",
+    "generatedAt":  "2026-09-30T10:06:25Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.92.9-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.9-beta/VNStudio-core-0.92.9-beta-win-x64.zip",
-                                    "sha256":  "b09ccab07c1db6627a5448242528b7f23a0fd661af256a48db436f1de4dcbac0",
-                                    "size":  80494825,
+                                    "version":  "0.92.10-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.10-beta/VNStudio-core-0.92.10-beta-win-x64.zip",
+                                    "sha256":  "be36c38195e80df07d3ae5cb3e63cf50542e6e65f6a64176926be1bd0746cc72",
+                                    "size":  80495046,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -53,10 +53,10 @@
                                                             ]
                                        },
                        "runtime.unity":  {
-                                             "version":  "0.92.9-beta",
-                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-unity-v0.92.9-beta/VNStudio-runtime-unity-0.92.9-beta-win-x64.zip",
-                                             "sha256":  "680c51437b78e9398fd181ea604a66593db44be4ba590cc0c89ae79b542d36a5",
-                                             "size":  47912436,
+                                             "version":  "0.92.10-beta",
+                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-unity-v0.92.10-beta/VNStudio-runtime-unity-0.92.10-beta-win-x64.zip",
+                                             "sha256":  "f290c372778a98e9ace32ec0382ff8b553e60959c76bc0e834b9dc3dff529a95",
+                                             "size":  47913630,
                                              "title":  "Windows (Unity) ランタイム",
                                              "license":  "VNStudio EULA"
                                          },
