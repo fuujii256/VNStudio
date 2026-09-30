@@ -2,7 +2,7 @@
 
 # コマンドリファレンス
 
-VNStudio 0.92.8-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
+VNStudio 0.92.9-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
 
 ## [テキスト・待機](commands/text.md)
 
@@ -75,6 +75,7 @@ VNStudio 0.92.8-beta のスクリプトコマンドの一覧です。書き方�
 | [`savegrid [列] [行]`](commands/system.md#savegrid) | セーブまたはロード画面を表示します。 |
 | [`settingsmenu`](commands/system.md#settingsmenu) | オートモード、文字速度、音量などの共通設定画面を表示します。 |
 | [`menu exit`](commands/system.md#menu-exit) | メニューを閉じ、呼び出し元へ戻ります。 |
+| [`menu lock on`](commands/system.md#menu-lock) | `on` の間はメニューを開けなくします (MENU ボタン・右クリック・左右キーすべて無効)。 |
 | [`cg<番号> "<表示テキスト>" <画像名>`](commands/system.md#cg-num) | CG スロットを登録、解放 (攻略済み)、または未解放に設定します。 |
 | [`call cgmode`](commands/system.md#call-cgmode) | 登録済み CG の一覧 (CG ギャラリー) を表示します。 |
 | [`call savemode`](commands/system.md#call-savemode) | 組み込みのセーブ画面またはロード画面を呼び出します。 |
