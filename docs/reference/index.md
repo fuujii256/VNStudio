@@ -2,7 +2,7 @@
 
 # コマンドリファレンス
 
-VNStudio 0.92.9-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
+VNStudio 0.92.10-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
 
 ## [テキスト・待機](commands/text.md)
 
@@ -75,8 +75,10 @@ VNStudio 0.92.9-beta のスクリプトコマンドの一覧です。書き方�
 | [`savegrid [列] [行]`](commands/system.md#savegrid) | セーブまたはロード画面を表示します。 |
 | [`settingsmenu`](commands/system.md#settingsmenu) | オートモード、文字速度、音量などの共通設定画面を表示します。 |
 | [`menu exit`](commands/system.md#menu-exit) | メニューを閉じ、呼び出し元へ戻ります。 |
+| [`debugconsole on`](commands/system.md#debugconsole) | `off` の間は PF12 / ` キーでデバッグコンソールを開けなくします。既定は `on` です。 |
 | [`menu lock on`](commands/system.md#menu-lock) | `on` の間はメニューを開けなくします (MENU ボタン・右クリック・左右キーすべて無効)。 |
 | [`cg<番号> "<表示テキスト>" <画像名>`](commands/system.md#cg-num) | CG スロットを登録、解放 (攻略済み)、または未解放に設定します。 |
+| [`cg persist on`](commands/system.md#cg-persist) | CG の登録・攻略状況を、アプリ終了後も保持するかを切り替えます。既定は `off` です。 |
 | [`call cgmode`](commands/system.md#call-cgmode) | 登録済み CG の一覧 (CG ギャラリー) を表示します。 |
 | [`call savemode`](commands/system.md#call-savemode) | 組み込みのセーブ画面またはロード画面を呼び出します。 |
 | [`setactive <on|off> textwindow`](commands/system.md#setactive) | テキストウィンドウの表示・非表示を切り替えます。 |

@@ -2,7 +2,7 @@
 
 # ランタイム対応表
 
-VNStudio 0.92.9-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
+VNStudio 0.92.10-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
 
 !!! warning "Windows (Unity) 以外のランタイムは α 版です"
     XZ80・MSX・PSP・X68000 のランタイムは α 版で、一部の機能が未実装です (下の表の × と —)。今後のバージョンで順次対応します。
@@ -83,8 +83,10 @@ VNStudio 0.92.9-beta 時点の、ランタイムごとのコマンド対応状�
 | [savegrid / loadgrid](commands/system.md#savegrid) | ○ | × | — | ○ | ○ |
 | [settingsmenu](commands/system.md#settingsmenu) | ○ | × | — | ○ | ○ |
 | [menu exit](commands/system.md#menu-exit) | ○ | △ | ○ | ○ | ○ |
+| [debugconsole](commands/system.md#debugconsole) | ○ | × | × | × | × |
 | [menu lock](commands/system.md#menu-lock) | ○ | × | × | × | × |
 | [cg0〜cg255](commands/system.md#cg-num) | ○ | ○ | — | ○ | ○ |
+| [cg persist](commands/system.md#cg-persist) | ○ | × | × | × | × |
 | [call cgmode / cggrid](commands/system.md#call-cgmode) | ○ | ○ | — | ○ | ○ |
 | [call savemode / call loadmode](commands/system.md#call-savemode) | ○ | × | × | × | × |
 | [setactive](commands/system.md#setactive) | ○ | ○ | ○ | ○ | ○ |

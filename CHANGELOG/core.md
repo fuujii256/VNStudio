@@ -1,5 +1,20 @@
 # 変更履歴 (基本セット: エディタ + Windows ランタイム)
 
+## 0.92.10-beta (2026-09-30)
+
+- Windows (Unity): デバッグコンソールを開けなくする `debugconsole off` を追加しました。
+    - `debugconsole off` の間は、`F12` キーと `` ` `` キーでデバッグコンソールを開けません。表示中のコンソールは閉じます。`debugconsole on` で元に戻ります (既定は `on`)。
+    - エラー (Error / Exception) が発生したときの強制表示は、`off` でも残ります。
+    - 書き方は [コマンドリファレンス (debugconsole)](https://fuujii256.github.io/VNStudio/reference/commands/system/#debugconsole) を参照してください。
+- Windows (Unity): CG ギャラリーの登録・攻略状況を、ロードで巻き戻さないようにしました。
+    - これまで、セーブデータをロードすると、CG の攻略状況がそのセーブ時点に戻ることがありました。アプリを起動している間は、ロードしても現在の状況を保ちます。
+- Windows (Unity): CG の攻略状況をアプリ終了後も保持する `cg persist on` を追加しました。
+    - `cg persist on` にすると、CG の状況を `global_variables.json` に保存し、次回の起動時に復元します。既定は `off` で、アプリを終了するとリセットされます。`cg persist off` を実行すると、保存済みの CG 状況は削除されます。
+    - `start.scn` の冒頭など、`cgN` コマンドより前に書いてください。書き方は [コマンドリファレンス (cg persist)](https://fuujii256.github.io/VNStudio/reference/commands/system/#cg-persist) を参照してください。
+- エディタ内のコマンドリファレンスに、`debugconsole` と `cg persist` を追加しました。
+- この版では、エディタ本体と Windows (Unity) ランタイムの両方を更新しています。
+    - すでに配布したゲームには反映されません。この版で配布用ファイルを作り直してください。
+
 ## 0.92.9-beta (2026-09-30)
 
 - Windows (Unity): メニューを開けなくする `menu lock` コマンドを追加しました。
