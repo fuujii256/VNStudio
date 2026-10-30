@@ -2,7 +2,7 @@
 
 # ランタイム対応表
 
-VNStudio 0.92.16-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
+VNStudio 0.92.17-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
 
 !!! warning "Windows (Unity) 以外のランタイムは α 版です"
     XZ80・MSX・PSP・X68000 のランタイムは α 版で、一部の機能が未実装です (下の表の × と —)。今後のバージョンで順次対応します。
@@ -27,7 +27,7 @@ VNStudio 0.92.16-beta 時点の、ランタイムごとのコマンド対応状�
 | コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [bg / bg0](commands/background.md#bg) | ○ | ○ | ○ | ○ | ○ |
-| [bg1〜bg3](commands/background.md#bg1) | ○ | △ | × | △ | △ |
+| [bg1〜bg3](commands/background.md#bg1) | ○ | △ | △ | △ | △ |
 | [bg_scroll](commands/background.md#bg-scroll) | ○ | × | ○ | ○ | ○ |
 
 ## キャラクター
