@@ -1,7 +1,7 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-10-30T07:58:17Z",
+    "generatedAt":  "2026-10-31T04:30:19Z",
     "components":  {
                        "core":  {
                                     "version":  "0.92.17-beta",
@@ -30,13 +30,13 @@
                                           "sourceUrl":  "https://github.com/danifunker/rusty-backup"
                                       },
                        "runtime.msx":  {
-                                           "version":  "0.92.17-beta",
-                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.17-beta/VNStudio-runtime-msx-0.92.17-beta.zip",
-                                           "sha256":  "73a081bfc460cbb808c632a7f2b13bea0ce60c23dfa0f673c6f7ac6bfba4ed30",
-                                           "size":  74544,
+                                           "version":  "0.92.18-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.18-beta/VNStudio-runtime-msx-0.92.18-beta.zip",
+                                           "sha256":  "fde8678f15758d6e5cc0151119f560c0213a5e901245f0b1e627ec736a021819",
+                                           "size":  74707,
                                            "title":  "MSX ランタイム (V9990) (α版)",
                                            "license":  "VNStudio EULA",
-                                           "notes":  "bg1 の透過合成に対応しました。エディタも更新し、プレビュー・配布用ROMを作り直してください。",
+                                           "notes":  "PSP風のセーブ・ロード・CG・設定画面と56×32サムネイルに対応しました。エディタ0.92.17-beta以降が必要です。",
                                            "requires":  {
                                                             "core":  "\u003e=0.92.17-beta"
                                                         },
