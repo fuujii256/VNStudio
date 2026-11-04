@@ -71,10 +71,11 @@ Scripts/test.scn
 | 項目 | 内容 |
 |---|---|
 | できるもの | エディタで選択したMSXパッケージ (4M ROM、8M ROM、または DOS2/SD) |
-| 置き場所 | `%LOCALAPPDATA%\VNStudio\work\msx\out\editor-preview\current-v9990` |
+| 置き場所 | `%LOCALAPPDATA%\VNStudio\work\msx\out\editor-preview\current-turbor-v9990-<形式>` (`rom4m`・`rom8m`・`dos2`) |
 
+- パッケージ形式は、MSXを選んだときに右側の「Controls」に表示される「MSX package」で選びます。
 - ROM形式では、生成されたROMファイルを配布してください。4M ROMは標準 `ASCII16` (セーブなし)、8M ROMは `ASCII16-X` です。
-- DOS2/SD形式はNextor用のSDイメージとして配布します。最大64MiBで、V9990専用です。
+- DOS2/SD形式では、出力先の `sd-card` フォルダにできる `VN.COM`・`VNDATA.BIN`・`README.txt` を、Nextor (MSX-DOS 2) で起動するSDカードにコピーして配布します。最大64MiBで、V9990専用です。
 - openMSX では、GFX9000 (V9990) を付けた MSX turboR (Panasonic FS-A1GT) としてプレビューできます。
 - 実機での動作は確認中です。
 
