@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-01T02:30:01Z",
+    "generatedAt":  "2026-11-04T08:41:25Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.92.19-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.19-beta/VNStudio-core-0.92.19-beta-win-x64.zip",
-                                    "sha256":  "bcf05574da003e485ef4a5c0b1078304dfe707210c2100cdb05964c411030cac",
-                                    "size":  80666880,
+                                    "version":  "0.92.20-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.20-beta/VNStudio-core-0.92.20-beta-win-x64.zip",
+                                    "sha256":  "417034c4bf4379308be2c91892ed9c94c199f6ae3c8ff27ac15a1b4e0792857e",
+                                    "size":  80669468,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -30,15 +30,15 @@
                                           "sourceUrl":  "https://github.com/danifunker/rusty-backup"
                                       },
                        "runtime.msx":  {
-                                           "version":  "0.92.19-beta",
-                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.19-beta/VNStudio-runtime-msx-0.92.19-beta.zip",
-                                           "sha256":  "c72882ed97349cbcd4fa5a6ec8305be6599a3d234859c033426b06a6bbb4156d",
-                                           "size":  74707,
+                                           "version":  "0.92.20-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.20-beta/VNStudio-runtime-msx-0.92.20-beta.zip",
+                                           "sha256":  "f26d174e22f148ceb20a9a11e28aa8c5f4e01d9f7c9826b56084910b7dbd66b2",
+                                           "size":  104040,
                                            "title":  "MSX ランタイム (V9990) (α版)",
                                            "license":  "VNStudio EULA",
-                                           "notes":  "MSXプレビューとランタイムのビルドキャッシュを改善しました。エディタ0.92.19-beta以降が推奨です。",
+                                           "notes":  "MSX1の音声経路を整理し、4M/8M/DOS2(SD)のパッケージ形式、DOS2の容量拡張、turboRのVOICE先読み、DOS2のopenMSXプレビューに対応しました。",
                                            "requires":  {
-                                                            "core":  "\u003e=0.92.19-beta"
+                                                            "core":  "\u003e=0.92.20-beta"
                                                         },
                                            "dependencies":  [
                                                                 "tools.bundle"
