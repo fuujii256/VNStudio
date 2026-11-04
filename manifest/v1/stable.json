@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-04T08:41:25Z",
+    "generatedAt":  "2026-11-04T09:01:57Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.92.20-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.20-beta/VNStudio-core-0.92.20-beta-win-x64.zip",
-                                    "sha256":  "417034c4bf4379308be2c91892ed9c94c199f6ae3c8ff27ac15a1b4e0792857e",
-                                    "size":  80669468,
+                                    "version":  "0.92.21-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.21-beta/VNStudio-core-0.92.21-beta-win-x64.zip",
+                                    "sha256":  "f58dd8301e82e6d2f9846681c4794842c66b596c2ae14a081e7bb67f9d87549d",
+                                    "size":  80676996,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
