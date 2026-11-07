@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-04T10:11:13Z",
+    "generatedAt":  "2026-11-07T07:02:27Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.92.24-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.24-beta/VNStudio-core-0.92.24-beta-win-x64.zip",
-                                    "sha256":  "c681de8cbdb5bba5d97f2b269f3a914fc6d86e046813c003c89566b188f33cd0",
-                                    "size":  80678517,
+                                    "version":  "0.92.25-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.92.25-beta/VNStudio-core-0.92.25-beta-win-x64.zip",
+                                    "sha256":  "b904616ba8121c7dc28a50f7c9e19bfee5877766b4ad2c29f509e3edc0f94342",
+                                    "size":  80679498,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -30,15 +30,15 @@
                                           "sourceUrl":  "https://github.com/danifunker/rusty-backup"
                                       },
                        "runtime.msx":  {
-                                           "version":  "0.92.24-beta",
-                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.24-beta/VNStudio-runtime-msx-0.92.24-beta.zip",
-                                           "sha256":  "2f305ccb2013c6b70530fa262c3c2df8e6e6718faac2a18e2301dabebda33764",
-                                           "size":  126186,
+                                           "version":  "0.92.25-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.25-beta/VNStudio-runtime-msx-0.92.25-beta.zip",
+                                           "sha256":  "f4c641ef32eaaf023a6bbee3865de6abb711718dd31ff75b29b2d55670a4bc06",
+                                           "size":  126776,
                                            "title":  "MSX ランタイム (V9990) (α版)",
                                            "license":  "VNStudio EULA",
-                                           "notes":  "4M ROM (標準ASCII16) が起動しない不具合を修正し、公開版エディタで4M・8M・DOS2(SD)を選べるようにしました。",
+                                           "notes":  "V9990 の立ち絵を画面の外で組み立てて一度に表示するようにし、フェードイン時のちらつきを解消しました。V9990 のフェードは明暗の演出を行わず、指定した時間だけ待って即座に切り替わります。`clear` が立ち絵も消すようになり、DOS2/SD でも立ち絵の VRAM キャッシュが効くようになりました。",
                                            "requires":  {
-                                                            "core":  "\u003e=0.92.24-beta"
+                                                            "core":  "\u003e=0.92.25-beta"
                                                         },
                                            "dependencies":  [
                                                                 "tools.bundle"
@@ -77,10 +77,10 @@
                                                                ]
                                           },
                        "tools.bundle":  {
-                                            "version":  "0.92.23-beta",
-                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.92.23-beta/VNStudio-tools-bundle-0.92.23-beta-win-x64.zip",
-                                            "sha256":  "185acef43843f1e0db84a8c43a66593baf741d5226947e51b2f7d97f646c7fae",
-                                            "size":  34207589,
+                                            "version":  "0.92.25-beta",
+                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.92.25-beta/VNStudio-tools-bundle-0.92.25-beta-win-x64.zip",
+                                            "sha256":  "82c0add08ed9ec0e9ebbfebeb69a15368a124886ab94779180964ec1fcd62969",
+                                            "size":  34207647,
                                             "title":  "VNStudio 共通ツール",
                                             "license":  "VNStudio EULA / Node.js: MIT"
                                         }
