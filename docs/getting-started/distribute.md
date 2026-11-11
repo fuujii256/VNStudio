@@ -93,15 +93,31 @@ Scripts/test.scn
 
 | 項目 | 内容 |
 |---|---|
-| できるもの | `pages.zip` (GitHub Pages / itch.io 用) または `unityroom.zip` (unityroom 用) と、同じ名前のフォルダ |
+| できるもの | 選んだ公開先のフォルダと ZIP (`GitHubPages.zip` / `itch.io.zip` / `unityroom.zip`) |
 | 置き場所 | `%LOCALAPPDATA%\VNStudio\work\webgl\publish` |
 | 中身 | `index.html`、`Build` (ゲーム本体)、`TemplateData`、`StreamingAssets` (素材・スクリプト・音声)、アップロード手順書 |
 
-- WebGL では、「パブリックフォルダを開く」のほかに、中央の「WebGL」ボタンでも公開物を作れます。ボタンで作ったときは、ブラウザでのプレビューも始まります。
-- 公開先に合わせて、「GitHub Pages / itch.io 用」と「unityroom 用」のどちらかを選んでから作ってください。圧縮の方式が違うため、別の公開先には使えません。
+- WebGL を選ぶと、右側の「公開先」で **GitHub Pages / itch.io / unityroom** のどれか 1 つを選びます。中央の「WebGL」ボタンを押すと、その公開先用の公開物を作り、ブラウザでプレビューします。
+- GitHub Pages と itch.io は同じ形式 (Brotli)、unityroom は専用形式 (Gzip) です。公開先ごとに形式が違うため、別の公開先には使えません。
 - アップロードの方法は、公開物と一緒にできる手順書 (`公開手順_GitHubPages.txt`・`公開手順_itch.io.txt`・`公開手順_unityroom.txt`) に書いてあります。
+- **GitHub Pages へは、エディタから直接「ワンクリック公開」できます** (下記)。
 - `index.html` をダブルクリックしても遊べません (ブラウザの制限で、Web サーバーから開く必要があります)。手元で確かめるときは、エディタのプレビューを使ってください。
+- スマートフォン・タブレットでは、画面を **タップで会話を進め**、**長押し (約 0.6 秒) でメニュー** を開けます。
 - `package-exclude.txt` の指定は、WebGL の公開物には効きません。
+
+#### GitHub Pages にワンクリックで公開する { #webgl-oneclick }
+
+GitHub Pages を選ぶと、公開先リポジトリの URL を入れて **「GitHub に自動公開」** ボタンを押すだけで、作品の WebGL 版をあなたの GitHub Pages に公開できます。git や GitHub Desktop は不要です。ファイルの合計が大きくても (100MB 超でも) そのまま公開できます。
+
+1. GitHub にリポジトリを作ります (公開リポジトリ。空のままで構いません)。
+2. エディタで WebGL → GitHub Pages を選び、リポジトリの URL を入れます。`github.com/<ユーザー>/<リポジトリ>` でも、公開ページの `<ユーザー>.github.io/<リポジトリ>` でも構いません。
+3. 「GitHub に自動公開」を押します。初回は、画面に出る確認コードを GitHub のページで入力して許可します (エディタがブラウザで GitHub を開きます)。
+4. 公開が終わると、`https://<ユーザー>.github.io/<リポジトリ>/` で遊べます (GitHub Pages の有効化に数十秒かかることがあります)。
+
+!!! warning "GitHub の許可範囲とトークンについて"
+    - 「GitHub に自動公開」で許可すると、VNStudio はあなたの **すべての Public リポジトリへの書き込み権限** (`public_repo`) を受け取ります (1 つのリポジトリだけに限定はできません)。信頼できる自分の PC でだけ使ってください。
+    - 許可したトークンは、あなたの PC に暗号化して保存されます (`%LOCALAPPDATA%\VNStudio\github_token.bin`、Windows の DPAPI で現在のユーザーだけが復号できます)。**このファイルを消すと、次回はもう一度許可が必要になります。**
+    - 許可を取り消すには、GitHub → Settings → Applications → **Authorized OAuth Apps** から VNStudio を削除してください。
 
 ### XZ80
 

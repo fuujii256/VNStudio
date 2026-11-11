@@ -105,16 +105,18 @@ MSX のプレビューには、エミュレータ **openMSX** を使います。
     - ブラウザのタブに表示される名前は「Unity Web Player | VNStudio」で、まだ作品名に変えられません。
 
 WebGL ランタイムは、作品をブラウザで遊べる形に書き出します (0.93.1-beta 以降)。中身は Windows (Unity) ランタイムと同じなので、スクリプトのコマンドは基本的に Windows (Unity) と同じように動きます。
-追加の準備は要りません。Unity をインストールする必要もありません。
+追加の準備は要りません。Unity をインストールする必要もありません。スマートフォン・タブレットにも対応していて、**タップで会話を進め、長押し (約 0.6 秒) でメニュー** を開けます (0.93.2-beta 以降)。
 
 1. エディタでランタイムの矢印を押して **「WebGL」** を選びます。
-2. 右側の「公開先」で、どちらかを選びます。
-    - **GitHub Pages / itch.io 用**: GitHub Pages と itch.io の両方で使えます (Brotli 圧縮)。
-    - **unityroom 用**: unityroom 専用の形式です (Gzip 圧縮)。
+2. 右側の「公開先」で、**GitHub Pages / itch.io / unityroom** のどれか 1 つを選びます。
+    - **GitHub Pages / itch.io**: 同じ形式です (Brotli 圧縮)。GitHub Pages へは下記の「ワンクリック公開」も使えます。
+    - **unityroom**: unityroom 専用の形式です (Gzip 圧縮)。
 3. 中央の「WebGL」のボタンを押します。初めてのときは、WebGL ランタイム (約 40 MB) をダウンロードしてよいか確認されます。
 4. 書き出しが終わると、公開物のフォルダが開き、同時にブラウザでプレビューが始まります (エディタの中の簡易サーバーで表示しています)。「クリックして開始」と表示されたら、画面をクリックしてください。
 
-公開物は `%LOCALAPPDATA%\VNStudio\work\webgl\publish` にできます。公開先ごとのアップロード手順書 (`公開手順_GitHubPages.txt`・`公開手順_itch.io.txt`・`公開手順_unityroom.txt`) が同じフォルダに入っているので、それに沿ってアップロードしてください。配り方は [作品を配布する](distribute.md#webgl) も参照してください。
+公開物は `%LOCALAPPDATA%\VNStudio\work\webgl\publish` にできます。公開先ごとのアップロード手順書 (`公開手順_GitHubPages.txt`・`公開手順_itch.io.txt`・`公開手順_unityroom.txt`) が同じフォルダに入っているので、それに沿ってアップロードしてください。
+
+GitHub Pages には、リポジトリの URL を入れてボタンを押すだけの **ワンクリック公開** も使えます (0.93.2-beta 以降)。配り方とワンクリック公開の手順は [作品を配布する](distribute.md#webgl) を参照してください。
 
 !!! note "WebGL の書き出しで行う変換"
     - WAV の音声は MP3 に変換します (エディタに同梱の LAME を使います)。MP3・OGG はそのまま使います。
