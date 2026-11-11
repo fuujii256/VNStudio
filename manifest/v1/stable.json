@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-10T12:37:35Z",
+    "generatedAt":  "2026-11-11T09:02:43Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.93.1-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.1-beta/VNStudio-core-0.93.1-beta-win-x64.zip",
-                                    "sha256":  "a9d6183f20cc6f356d96e717e438853c2792dc56350dfbf7779891775deae605",
-                                    "size":  81683825,
+                                    "version":  "0.93.2-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.2-beta/VNStudio-core-0.93.2-beta-win-x64.zip",
+                                    "sha256":  "7d5ac61514eda28be3d46c1cee027657de90507be61f7a2ef1e6f871a04d9d82",
+                                    "size":  81707402,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -65,15 +65,15 @@
                                              "license":  "VNStudio EULA"
                                          },
                        "runtime.webgl":  {
-                                             "version":  "0.93.1-beta",
-                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-webgl-v0.93.1-beta/VNStudio-runtime-webgl-0.93.1-beta.zip",
-                                             "sha256":  "872825c3c14422fe91f94f61f70607cbe8ddc377ada66386f96ef615ee4b539c",
-                                             "size":  42267438,
+                                             "version":  "0.93.2-beta",
+                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-webgl-v0.93.2-beta/VNStudio-runtime-webgl-0.93.2-beta.zip",
+                                             "sha256":  "831d8eb3a5ab8031a6b2b641cd26852c7d64cf398a8fd9ab67b5d1383adc6b08",
+                                             "size":  42259618,
                                              "title":  "WebGL (ブラウザ) ランタイム (α版)",
                                              "license":  "VNStudio EULA",
-                                             "notes":  "作品をブラウザで遊べる形 (WebGL) に書き出すためのランタイムです。GitHub Pages / itch.io 用と unityroom 用のプレイヤーが入っています。動画 (webm) の背景は表示されず、セーブ・ロードはブラウザ向けの調整前です。",
+                                             "notes":  "作品をブラウザで遊べる形 (WebGL) に書き出すためのランタイムです。スマートフォン・タブレットのタッチ操作に対応し、再公開時の「Corrupted data」を修正しました。動画 (webm) の背景は表示されず、セーブ・ロードはブラウザ向けの調整前です。",
                                              "requires":  {
-                                                              "core":  "\u003e=0.93.1-beta"
+                                                              "core":  "\u003e=0.93.2-beta"
                                                           }
                                          },
                        "runtime.x68000":  {
