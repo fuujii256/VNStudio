@@ -109,7 +109,13 @@ Scripts/test.scn
 
 GitHub Pages を選ぶと、公開先リポジトリの URL を入れて **「GitHub に自動公開」** ボタンを押すだけで、作品の WebGL 版をあなたの GitHub Pages に公開できます。git や GitHub Desktop は不要です。ファイルの合計が大きくても (100MB 超でも) そのまま公開できます。
 
-1. GitHub にリポジトリを作ります (公開リポジトリ。空のままで構いません)。
+1. **GitHub に「リポジトリ」(作品の置き場所) を作ります。** GitHub を初めて使う方は、次の手順で作成してください。
+    1. GitHub のアカウントがなければ、[github.com](https://github.com/) の **「Sign up」** から無料で作ります (メールアドレス・ユーザー名・パスワードを登録)。登録したユーザー名が、公開ページの URL (`<ユーザー名>.github.io/…`) の一部になります。
+    2. GitHub にログインした状態で、[github.com/new](https://github.com/new) を開きます (または画面右上の **「+」→「New repository」**)。
+    3. **「Repository name」** に名前を入れます (例: `my-novel`)。ここに入れた名前が、そのまま公開 URL (`<ユーザー名>.github.io/<リポジトリ名>/`) になります。英小文字・数字・ハイフンがおすすめです (空白は使えません)。
+    4. 公開範囲は **「Public」** を選びます (GitHub Pages で公開するには Public にする必要があります)。
+    5. その下の「Add a README file」などのチェックは、**付けても付けなくても構いません** (空のままで OK)。
+    6. 一番下の **「Create repository」** ボタンを押します。作成後に開く `github.com/<ユーザー名>/<リポジトリ名>` が、このリポジトリの URL です (次の手順で使います)。
 2. エディタで WebGL → GitHub Pages を選び、リポジトリの URL を入れます。`github.com/<ユーザー>/<リポジトリ>` でも、公開ページの `<ユーザー>.github.io/<リポジトリ>` でも構いません。
 3. 「GitHub に自動公開」を押します。初回は、画面に出る確認コードを GitHub のページで入力して許可します (エディタがブラウザで GitHub を開きます)。
 4. 公開が終わると、`https://<ユーザー>.github.io/<リポジトリ>/` で遊べます (GitHub Pages の有効化に数十秒かかることがあります)。
