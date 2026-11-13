@@ -93,13 +93,14 @@ Scripts/test.scn
 
 | 項目 | 内容 |
 |---|---|
-| できるもの | 選んだ公開先のフォルダと ZIP (`GitHubPages.zip` / `itch.io.zip` / `unityroom.zip`) |
-| 置き場所 | `%LOCALAPPDATA%\VNStudio\work\webgl\publish` |
-| 中身 | `index.html`、`Build` (ゲーム本体)、`TemplateData`、`StreamingAssets` (素材・スクリプト・音声)、アップロード手順書 |
+| できるもの | 選んだ公開先のフォルダ。GitHub Pages と itch.io は ZIP (`GitHubPages.zip` / `itch.io.zip`) も作ります (unityroom は ZIP を使わないので作りません) |
+| 置き場所 | `%USERPROFILE%\VNStudio\WebGL\<公開先>` (0.93.3-beta 以降。それより前は `%LOCALAPPDATA%\VNStudio\work\webgl\publish`) |
+| 中身 | GitHub Pages / itch.io: `index.html`、`Build` (ゲーム本体)、`TemplateData`、`StreamingAssets` (素材・スクリプト・音声)、アップロード手順書<br>unityroom: `Build`、`StreamingAssets`、アップロード手順書の 3 つだけ |
 
 - WebGL を選ぶと、右側の「公開先」で **GitHub Pages / itch.io / unityroom** のどれか 1 つを選びます。中央の「WebGL」ボタンを押すと、その公開先用の公開物を作り、ブラウザでプレビューします。
 - GitHub Pages と itch.io は同じ形式 (Brotli)、unityroom は専用形式 (Gzip) です。公開先ごとに形式が違うため、別の公開先には使えません。
 - アップロードの方法は、公開物と一緒にできる手順書 (`公開手順_GitHubPages.txt`・`公開手順_itch.io.txt`・`公開手順_unityroom.txt`) に書いてあります。
+- unityroom では、「Webビルド設定」で **Unity 6 (6000 系)** を選んでから、`Build` フォルダを「Webビルドアップロード」に、`StreamingAssets` フォルダを左メニューの「StreamingAssets」にアップロードします (index.html と ZIP は使いません)。unityroom の画面では「クリックして開始」は出ず、BGM は最初にクリックしたときから鳴ります。
 - **GitHub Pages へは、エディタから直接「ワンクリック公開」できます** (下記)。
 - `index.html` をダブルクリックしても遊べません (ブラウザの制限で、Web サーバーから開く必要があります)。手元で確かめるときは、エディタのプレビューを使ってください。
 - スマートフォン・タブレットでは、画面を **タップで会話を進め**、**長押し (約 0.6 秒) でメニュー** を開けます。
