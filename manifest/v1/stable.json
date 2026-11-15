@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-13T06:17:59Z",
+    "generatedAt":  "2026-11-15T08:47:47Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.93.3-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.3-beta/VNStudio-core-0.93.3-beta-win-x64.zip",
-                                    "sha256":  "07f0ef10b34ca5ee3d8bb1677e02eb57f59ffd0e48c330f3447cbc69cabbe41b",
-                                    "size":  80901469,
+                                    "version":  "0.93.4-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.4-beta/VNStudio-core-0.93.4-beta-win-x64.zip",
+                                    "sha256":  "61ce93120eee4589ead6da53cf8d2b18cf75decc032dfaf26a12f09ddd64f547",
+                                    "size":  80901758,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -77,22 +77,26 @@
                                                           }
                                          },
                        "runtime.x68000":  {
-                                              "version":  "0.92.15-beta",
-                                              "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-x68000-v0.92.15-beta/VNStudio-runtime-x68000-0.92.15-beta.zip",
-                                              "sha256":  "f28681f6c9856b3ee221c76d809d49336c1cc0cdc238ab7ab38001e78ed0e307",
-                                              "size":  95718,
+                                              "version":  "0.93.4-beta",
+                                              "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-x68000-v0.93.4-beta/VNStudio-runtime-x68000-0.93.4-beta.zip",
+                                              "sha256":  "700cf6695feb3b538c0abfcc0f731f3acec6cfe5cfe18b891c29b274439e6b9d",
+                                              "size":  96297,
                                               "title":  "X68000 ランタイム (α版)",
                                               "license":  "VNStudio EULA",
+                                              "notes":  "`config text size` (本文の文字サイズ) に対応し、話者名を黄色で表示、本文の位置を新しい本文フォントに合わせて直しました。エディタ・共通ツールと合わせて 0.93.4-beta にしてください。",
+                                              "requires":  {
+                                                               "core":  "\u003e=0.93.4-beta"
+                                                           },
                                               "dependencies":  [
                                                                    "tools.bundle",
                                                                    "ext.rb-cli"
                                                                ]
                                           },
                        "tools.bundle":  {
-                                            "version":  "0.92.25-beta",
-                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.92.25-beta/VNStudio-tools-bundle-0.92.25-beta-win-x64.zip",
-                                            "sha256":  "82c0add08ed9ec0e9ebbfebeb69a15368a124886ab94779180964ec1fcd62969",
-                                            "size":  34207647,
+                                            "version":  "0.93.4-beta",
+                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.93.4-beta/VNStudio-tools-bundle-0.93.4-beta-win-x64.zip",
+                                            "sha256":  "77c1c2897024c13230ce209c75f5bd9f781bd66b0e00d6a065c292d50a840ba8",
+                                            "size":  34208185,
                                             "title":  "VNStudio 共通ツール",
                                             "license":  "VNStudio EULA / Node.js: MIT"
                                         }
