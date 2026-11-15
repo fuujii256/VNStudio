@@ -2,7 +2,7 @@
 
 # ランタイム対応表
 
-VNStudio 0.93.3-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
+VNStudio 0.93.4-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
 
 !!! warning "Windows (Unity) 以外のランタイムは α 版です"
     XZ80・MSX・PSP・X68000 のランタイムは α 版で、一部の機能が未実装です (下の表の × と —)。今後のバージョンで順次対応します。
@@ -64,7 +64,7 @@ VNStudio 0.93.3-beta 時点の、ランタイムごとのコマンド対応状�
 | [jump / goto](commands/flow.md#jump) | ○ | ○ | ○ | ○ | ○ |
 | [call / return](commands/flow.md#call) | ○ | ○ | ○ | ○ | ○ |
 | [int / set / add](commands/flow.md#int) | ○ | △ | △ | △ | △ |
-| [global](commands/flow.md#global) | ○ | × | × | × | × |
+| [global](commands/flow.md#global) | ○ | × | × | × | ○ |
 | [if](commands/flow.md#if) | ○ | ○ | ○ | ○ | ○ |
 | [switch / case / default](commands/flow.md#switch) | ○ | ○ | ○ | ○ | ○ |
 
@@ -84,9 +84,9 @@ VNStudio 0.93.3-beta 時点の、ランタイムごとのコマンド対応状�
 | [settingsmenu](commands/system.md#settingsmenu) | ○ | × | ○ | ○ | ○ |
 | [menu exit](commands/system.md#menu-exit) | ○ | △ | ○ | ○ | ○ |
 | [debugconsole](commands/system.md#debugconsole) | ○ | × | × | × | × |
-| [menu lock](commands/system.md#menu-lock) | ○ | × | × | × | × |
+| [menu lock](commands/system.md#menu-lock) | ○ | × | × | × | ○ |
 | [cg0〜cg255](commands/system.md#cg-num) | ○ | ○ | ○ | ○ | ○ |
-| [cg persist](commands/system.md#cg-persist) | ○ | × | × | × | × |
+| [cg persist](commands/system.md#cg-persist) | ○ | × | × | × | ○ |
 | [call cgmode / cggrid](commands/system.md#call-cgmode) | ○ | ○ | ○ | ○ | ○ |
 | [call savemode / call loadmode](commands/system.md#call-savemode) | ○ | × | × | × | × |
 | [setactive](commands/system.md#setactive) | ○ | ○ | ○ | ○ | ○ |
@@ -109,10 +109,10 @@ VNStudio 0.93.3-beta 時点の、ランタイムごとのコマンド対応状�
 | [config menuwindow](commands/config.md#config-menuwindow) | ○ | × | ○ | ○ | ○ |
 | [config uisound](commands/config.md#config-uisound) | ○ | ○ | △ | ○ | ○ |
 | [config automode](commands/config.md#config-automode) | ○ | ○ | ○ | ○ | ○ |
-| [config volume](commands/config.md#config-volume) | ○ | × | × | × | × |
+| [config volume](commands/config.md#config-volume) | ○ | × | × | × | △ |
 | [config background color](commands/config.md#config-background-color) | ○ | ○ | ○ | ○ | ○ |
 | [config fullscreen / windowsize](commands/config.md#config-fullscreen) | ○ | × | × | × | × |
-| [config savedata slots](commands/config.md#config-savedata-slots) | ○ | × | × | × | × |
+| [config savedata slots](commands/config.md#config-savedata-slots) | ○ | × | × | × | ○ |
 | [config sysmenu](commands/config.md#config-sysmenu) | ○ | × | × | × | × |
 | [config menu](commands/config.md#config-menu-mode) | ○ | × | × | × | × |
 | [config rightclick](commands/config.md#config-rightclick) | ○ | × | × | × | × |
@@ -131,6 +131,6 @@ VNStudio 0.93.3-beta 時点の、ランタイムごとのコマンド対応状�
 |---|:-:|:-:|:-:|:-:|:-:|
 | [OPNAPlay / OPLLPlay / FMStop](commands/legacy.md#opnaplay) | ○ | ○ | △ | × | △ |
 | [call 8puzzle](commands/legacy.md#call-8puzzle) | ○ | × | × | × | × |
-| [float / string](commands/legacy.md#float) | ○ | × | × | × | × |
+| [float / string](commands/legacy.md#float) | ○ | × | × | × | ○ |
 | [mode / at / spawn](commands/legacy.md#mode) | ○ | × | × | × | × |
 
