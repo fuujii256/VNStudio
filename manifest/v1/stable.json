@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-15T08:47:47Z",
+    "generatedAt":  "2026-11-16T07:59:16Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.93.4-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.4-beta/VNStudio-core-0.93.4-beta-win-x64.zip",
-                                    "sha256":  "61ce93120eee4589ead6da53cf8d2b18cf75decc032dfaf26a12f09ddd64f547",
-                                    "size":  80901758,
+                                    "version":  "0.93.5-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.5-beta/VNStudio-core-0.93.5-beta-win-x64.zip",
+                                    "sha256":  "1da3227451ed7599ec04c61cdcf0be1ed299ec0024604304d97d194a3a249e8a",
+                                    "size":  80906698,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -57,23 +57,27 @@
                                                             ]
                                        },
                        "runtime.unity":  {
-                                             "version":  "0.92.15-beta.2",
-                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-unity-v0.92.15-beta.2/VNStudio-runtime-unity-0.92.15-beta.2-win-x64.zip",
-                                             "sha256":  "9fcbd68ffcae812d6a06974fa74724d1fde1bd140e98f772e8d784f3b737913c",
-                                             "size":  48273085,
+                                             "version":  "0.93.5-beta",
+                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-unity-v0.93.5-beta/VNStudio-runtime-unity-0.93.5-beta-win-x64.zip",
+                                             "sha256":  "1836e16705f4aea7c136def55165c7ddcae7c053853042b747a6f4d2464c8403",
+                                             "size":  48274386,
                                              "title":  "Windows (Unity) ランタイム",
-                                             "license":  "VNStudio EULA"
+                                             "license":  "VNStudio EULA",
+                                             "notes":  "作品ごとにプレイヤーのデータ (永続変数・CG 実績・音量) を分けられるようになりました。スマートフォン・タブレットのタッチ操作、セーブの安全な書き込みにも対応。作品ごとの分離を使うにはエディタ・WebGL ランタイムと同じ版にそろえ、配布用ファイルを作り直してください。",
+                                             "requires":  {
+                                                              "core":  "\u003e=0.93.5-beta"
+                                                          }
                                          },
                        "runtime.webgl":  {
-                                             "version":  "0.93.2-beta",
-                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-webgl-v0.93.2-beta/VNStudio-runtime-webgl-0.93.2-beta.zip",
-                                             "sha256":  "831d8eb3a5ab8031a6b2b641cd26852c7d64cf398a8fd9ab67b5d1383adc6b08",
-                                             "size":  42259618,
+                                             "version":  "0.93.5-beta",
+                                             "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-webgl-v0.93.5-beta/VNStudio-runtime-webgl-0.93.5-beta.zip",
+                                             "sha256":  "df2347d0c5c5585f713118bb55b01844f94b7f0dcc43a935a113658fabaa1f0d",
+                                             "size":  42275337,
                                              "title":  "WebGL (ブラウザ) ランタイム (α版)",
                                              "license":  "VNStudio EULA",
-                                             "notes":  "作品をブラウザで遊べる形 (WebGL) に書き出すためのランタイムです。スマートフォン・タブレットのタッチ操作に対応し、再公開時の「Corrupted data」を修正しました。動画 (webm) の背景は表示されず、セーブ・ロードはブラウザ向けの調整前です。",
+                                             "notes":  "作品をブラウザで遊べる形 (WebGL) に書き出すためのランタイムです。作品ごとのプレイヤーデータ分離に対応しました。スマートフォン・タブレットのタッチ操作に対応。動画 (webm) の背景は表示されず、セーブ・ロードはブラウザ向けの調整前です。",
                                              "requires":  {
-                                                              "core":  "\u003e=0.93.2-beta"
+                                                              "core":  "\u003e=0.93.5-beta"
                                                           }
                                          },
                        "runtime.x68000":  {
