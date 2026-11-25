@@ -1,13 +1,13 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-11-23T10:07:41Z",
+    "generatedAt":  "2026-11-25T12:19:35Z",
     "components":  {
                        "core":  {
-                                    "version":  "0.93.6-beta",
-                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.6-beta/VNStudio-core-0.93.6-beta-win-x64.zip",
-                                    "sha256":  "313d7f203573c3a4c08d4695c49afd878978c46fd3001e3f70f9b9c7a356175b",
-                                    "size":  80906618,
+                                    "version":  "0.93.7-beta",
+                                    "url":  "https://github.com/fuujii256/VNStudio/releases/download/core-v0.93.7-beta/VNStudio-core-0.93.7-beta-win-x64.zip",
+                                    "sha256":  "d0c606bb7ea168ed504f2a2d0813706e350961a7fc0d5c2ac73fa4f277e6ea0a",
+                                    "size":  80917310,
                                     "title":  "VNStudio エディタ本体",
                                     "license":  "VNStudio EULA"
                                 },
@@ -30,15 +30,15 @@
                                           "sourceUrl":  "https://github.com/danifunker/rusty-backup"
                                       },
                        "runtime.msx":  {
-                                           "version":  "0.92.25-beta",
-                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.92.25-beta/VNStudio-runtime-msx-0.92.25-beta.zip",
-                                           "sha256":  "f4c641ef32eaaf023a6bbee3865de6abb711718dd31ff75b29b2d55670a4bc06",
-                                           "size":  126776,
-                                           "title":  "MSX ランタイム (V9990) (α版)",
+                                           "version":  "0.93.7-beta",
+                                           "url":  "https://github.com/fuujii256/VNStudio/releases/download/runtime-msx-v0.93.7-beta/VNStudio-runtime-msx-0.93.7-beta.zip",
+                                           "sha256":  "892cd13990a6c5ea84f404d769550bf590d41c966269ccb190db2de6602f11c2",
+                                           "size":  176757,
+                                           "title":  "MSX ランタイム (V9990 / V9968) (α版)",
                                            "license":  "VNStudio EULA",
-                                           "notes":  "V9990 の立ち絵を画面の外で組み立てて一度に表示するようにし、フェードイン時のちらつきを解消しました。V9990 のフェードは明暗の演出を行わず、指定した時間だけ待って即座に切り替わります。`clear` が立ち絵も消すようになり、DOS2/SD でも立ち絵の VRAM キャッシュが効くようになりました。",
+                                           "notes":  "V9968 (現行レジスタ仕様・blueMSX+ / HRa! 実機) を α版として配布開始しました。config MSX char_sprite on で全背景・全立ち絵・選択肢画像・メニュー背景を 4MB VRAM へ常駐させ、以後の表示をほぼ一瞬にします。オートモードの Unity 準拠化・オート中メニュー・内蔵VDP の shake 修正・セーブ/ロード通知のボタン化など、V9990・内蔵VDP・DOS2 共通の演出改善も入っています。エディタ・共通ツールと合わせて 0.93.7-beta にしてください。",
                                            "requires":  {
-                                                            "core":  "\u003e=0.92.25-beta"
+                                                            "core":  "\u003e=0.93.7-beta"
                                                         },
                                            "dependencies":  [
                                                                 "tools.bundle"
@@ -97,10 +97,10 @@
                                                                ]
                                           },
                        "tools.bundle":  {
-                                            "version":  "0.93.4-beta",
-                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.93.4-beta/VNStudio-tools-bundle-0.93.4-beta-win-x64.zip",
-                                            "sha256":  "77c1c2897024c13230ce209c75f5bd9f781bd66b0e00d6a065c292d50a840ba8",
-                                            "size":  34208185,
+                                            "version":  "0.93.7-beta",
+                                            "url":  "https://github.com/fuujii256/VNStudio/releases/download/tools-bundle-v0.93.7-beta/VNStudio-tools-bundle-0.93.7-beta-win-x64.zip",
+                                            "sha256":  "417aff1cccc4389f16d4c07fe761adba8cc735894da9de8f9d6abe012bd543f3",
+                                            "size":  34213591,
                                             "title":  "VNStudio 共通ツール",
                                             "license":  "VNStudio EULA / Node.js: MIT"
                                         }
