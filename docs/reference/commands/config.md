@@ -31,7 +31,7 @@ config text font rounded-mplus-1m-regular
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | フォントは画面モードに合わせて自動で切り替わります。 |
-| MSX (V9990) | △ | `NotoSansJP-Regular`、`rounded-mplus-1m-regular`、`SawarabiMincho-Regular` の 3 種類に対応します。収録されていないフォントは内蔵の k12x8 を使います。 |
+| MSX (V9990 / V9968) | △ | `NotoSansJP-Regular`、`rounded-mplus-1m-regular`、`SawarabiMincho-Regular` の 3 種類に対応します。収録されていないフォントは内蔵の k12x8 を使います。 |
 | PSP | △ | `NotoSansJP-Regular`、`rounded-mplus-1m-regular`、`SawarabiMincho-Regular` の 3 種類に対応します。 |
 | X68000 | △ | `NotoSansJP-Regular`、`rounded-mplus-1m-regular`、`SawarabiMincho-Regular` の 3 種類に対応します。 |
 
@@ -59,7 +59,7 @@ config text size 40
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | △ | 文字の間隔を近似的に調整します。 |
-| MSX (V9990) | △ | 近似的に反映します。 |
+| MSX (V9990 / V9968) | △ | 近似的に反映します。 |
 | PSP | △ | 近似的に反映します。 |
 | X68000 | △ | 本文の文字サイズを 8〜16px に換算して表示します (46〜48 が標準の 11px、60 で 14px、66 以上は 16px)。名前・選択肢・メニューは標準サイズのままです。ロード直後は、次の `config text size` まで標準サイズで表示します。 |
 
@@ -87,7 +87,7 @@ config text speed 0.03
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ |  |
-| MSX (V9990) | ○ |  |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -115,7 +115,7 @@ config text wait 1.5
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ |  |
-| MSX (V9990) | ○ |  |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -145,7 +145,7 @@ config text color #FFD0E8
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ |  |
-| MSX (V9990) | ○ |  |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -167,7 +167,7 @@ config char_text size <サイズ>
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
 | PSP | × | 非対応 (読み飛ばし) |
 | X68000 | × | 非対応 (読み飛ばし) |
 
@@ -199,7 +199,7 @@ config textwindow image TWImage1 1.0
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
-| MSX (V9990) | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
+| MSX (V9990 / V9968) | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
 | PSP | ○ |  |
 | X68000 | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
 
@@ -228,7 +228,7 @@ config textwindow mode <0〜3>
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
 | PSP | × | 非対応 (読み飛ばし) |
 | X68000 | × | 非対応 (読み飛ばし) |
 
@@ -256,7 +256,7 @@ config choicewindow choice_frame 0.9
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
-| MSX (V9990) | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
+| MSX (V9990 / V9968) | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
 | PSP | ○ |  |
 | X68000 | ○ | 透明度の指定は受け付けますが、不透明で表示します。 |
 
@@ -278,7 +278,7 @@ config menuwindow <画像名> [alpha]
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | ○ |  |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -317,7 +317,7 @@ config uisound textadvance punyu
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ |  |
-| MSX (V9990) | △ | PSG の単音で近似して再生します。 |
+| MSX (V9990 / V9968) | △ | PSG の単音で近似して再生します。 |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -347,7 +347,7 @@ config automode on
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ |  |
-| MSX (V9990) | ○ |  |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -377,7 +377,7 @@ config volume bgm 80
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
 | PSP | × | 音量は `settingsmenu` で設定します。 |
 | X68000 | △ | ADPCM に音量の機能がないため、書き出し時に音声データへ反映します (bgm / se / voice / system。チャンネルごとにスクリプトで最初の値)。fm は対象外です。設定画面ではチャンネルごとの ON / OFF を切り替えます。 |
 
@@ -405,7 +405,7 @@ config background color #000000
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | ○ |  |
-| MSX (V9990) | ○ |  |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | ○ |  |
 | X68000 | ○ |  |
 
@@ -430,7 +430,7 @@ config windowsize <幅> <高さ>
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
 | PSP | × | 非対応 (読み飛ばし) |
 | X68000 | × | 非対応 (読み飛ばし) |
 
@@ -452,7 +452,7 @@ config savedata slots <数>
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
 | PSP | × | 非対応 (読み飛ばし) |
 | X68000 | ○ | 1〜100 の範囲で指定します。 |
 
@@ -482,7 +482,7 @@ config sysmenu automode on AUTO 1000 -600
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | システムメニューは台詞待ち中の左右キー (またはジョイスティック B) で開きます。 |
+| MSX (V9990 / V9968) | × | システムメニューは台詞待ち中の左右キー (またはジョイスティック B) で開きます。 |
 | PSP | × | システムメニューは決められたボタン操作で開きます。 |
 | X68000 | × | システムメニューは台詞待ち中の左右キーで開きます。 |
 
@@ -511,7 +511,7 @@ config menu transition slide_left slide_right 0.5
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
 | PSP | × | 非対応 (読み飛ばし) |
 | X68000 | × | 非対応 (読み飛ばし) |
 
@@ -533,7 +533,67 @@ config rightclick <sysmenu|textoff>
 |---|:-:|---|
 | Windows (Unity) | ○ |  |
 | XZ80 | × | 非対応 (読み飛ばし) |
-| MSX (V9990) | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | × | 非対応 (読み飛ばし) |
+| PSP | × | 非対応 (読み飛ばし) |
+| X68000 | × | 非対応 (読み飛ばし) |
+
+---
+
+## config MSX cache — 立ち絵の VRAM 先読み (MSX) {#config-msx-cache}
+
+MSX 専用。透明部分を省いて立ち絵を空き VRAM へ先読みします。
+
+**書式**
+
+```text
+config MSX cache [キャラクター名 [フォルダ名 ...]]
+```
+
+例: `config MSX cache kyouka wakeup`。指定フォルダで使用する表示パターンがすべて登録できた場合だけ、残り容量へ他の立ち絵も登録します。容量不足の間は他の素材を保留します。フォルダを省略するとキャラクター全体、すべて省略すると従来順です。V9968 の 4MB VRAM 常駐中 (`config MSX char_sprite on`) は無視します。
+
+**例**
+
+```text
+config MSX cache kyouka wakeup
+```
+
+**対応ランタイム**
+
+| ランタイム | 対応 | 補足 |
+|---|:-:|---|
+| Windows (Unity) | × | 非対応 (読み飛ばし) |
+| XZ80 | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | ○ |  |
+| PSP | × | 非対応 (読み飛ばし) |
+| X68000 | × | 非対応 (読み飛ばし) |
+
+---
+
+## config MSX char_sprite — 立ち絵スプライト / 4MB VRAM 常駐 (MSX V9968) {#config-msx-char-sprite}
+
+MSX の V9968 専用。on で立ち絵をスプライトで描きます。
+
+**書式**
+
+```text
+config MSX char_sprite on|off
+```
+
+現行 V9968 (blueMSX+) のカートリッジ版では、この行で全背景・全立ち絵・選択肢画像・メニュー背景を 4MB VRAM へまとめて転送し、以後の表示がほぼ一瞬になります。転送が終わるまで次の行へ進まないので、前の行でローディング画像を表示しておきます (BGM は鳴り続けます)。例: `bg loading` → `config MSX char_sprite on` → `bg title`。入らなかった素材は従来どおり ROM から描き、ビルド時に警告します。
+
+**例**
+
+```text
+config MSX char_sprite on
+```
+
+**対応ランタイム**
+
+| ランタイム | 対応 | 補足 |
+|---|:-:|---|
+| Windows (Unity) | × | 非対応 (読み飛ばし) |
+| XZ80 | × | 非対応 (読み飛ばし) |
+| MSX (V9990 / V9968) | ○ |  |
 | PSP | × | 非対応 (読み飛ばし) |
 | X68000 | × | 非対応 (読み飛ばし) |
 

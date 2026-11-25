@@ -1,6 +1,6 @@
 # ほかのランタイムを使う
 
-基本セットに入っているのは Windows (Unity) ランタイムだけです。PSP・X68000・MSX (V9990)・WebGL のランタイムは、エディタで **初めて選んだときに自動でダウンロード** します (0.91.0-beta 以降。WebGL は 0.93.1-beta 以降)。
+基本セットに入っているのは Windows (Unity) ランタイムだけです。PSP・X68000・MSX・WebGL のランタイムは、エディタで **初めて選んだときに自動でダウンロード** します (0.91.0-beta 以降。WebGL は 0.93.1-beta 以降)。
 
 !!! warning "Windows (Unity) 以外のランタイムは α 版です"
     PSP・X68000・MSX・XZ80・WebGL のランタイムは **α 版** で、一部の機能が未実装です。未実装のコマンドは書き出すときに読み飛ばされるので、スクリプトはそのまま進行します。
@@ -10,7 +10,7 @@
 |---|---|---|
 | PSP | α 版 | なし (エミュレータ PPSSPP も自動でダウンロードします) |
 | X68000 | α 版 | RetroArch と PX68k コア、X68000 の IPL/CG ROM、Human68k 3.02 のシステムディスク (無償公開物。起動 HDF はエディタが作ります) |
-| MSX (V9990) | α 版 | openMSX、MSX turboR (Panasonic FS-A1GT) のシステム ROM |
+| MSX (V9990 / V9968) | α 版 | V9968 は blueMSX+ (システム ROM 不要)。V9990・内蔵 VDP・DOS2/SD は openMSX と MSX turboR (Panasonic FS-A1GT) のシステム ROM |
 | WebGL (ブラウザ) | α 版 | なし (Unity は不要です。公開先のアカウントは必要です) |
 | XZ80 | α 版 (公開準備中) | — |
 
@@ -70,12 +70,29 @@ X68000 を初めて選んだとき、見つからなかった項目を指定す�
 !!! warning "ROM と HDF について"
     X68000 の ROM と Human68k は VNStudio には含まれていません。ROM はご自身で権利をお持ちのものを使ってください。
 
-## MSX (V9990)
+## MSX (V9990 / V9968)
 
 !!! note "MSX ランタイムの主な未実装機能 (α 版)"
     背景レイヤー `bg2` / `bg3`、録音した BGM (`bgm`)、小数・文字列の変数。`call savemode` / `call loadmode` は非対応です。
 
-MSX のプレビューには、エミュレータ **openMSX** を使います。GFX9000 (V9990) を載せた MSX turboR (Panasonic FS-A1GT) として起動します。
+MSX の映像方式は、エディタの MSX 設定で **V9990 (GFX9000)** / **V9968** / **内蔵 VDP (V9938/V9958)** から選べます。プレビューのエミュレータは **blueMSX+ (既定)** と **openMSX** から選べ、blueMSX+ が見つからないときは openMSX へ自動で切り替わります。準備ができていないときは、MSX を選んだときに案内が表示されます。
+
+### blueMSX+ (V9968 の既定)
+
+V9968 は blueMSX+ で起動します (C-BIOS 同梱のため、システム ROM は不要です)。
+
+1. [blueMSX+ (Hesoten 版)](https://github.com/Hesoten/blueMSX-plus/releases) の **x64 版** zip をダウンロードします。
+2. 次のどれかに `blueMSX+.exe` が来るように展開します。
+    - `%LOCALAPPDATA%\VNStudio\Tools\blueMSXplus\blueMSX+.exe`
+    - `C:\Program Files\blueMSX+\blueMSX+.exe`
+    - 環境変数 `VNSTUDIO_BLUEMSXPLUS` に指定した場所
+3. 既存の blueMSX をお使いの場合は、設定ファイルを共有しないよう、**別の専用フォルダ**に置いてください。
+
+blueMSX+ は VNStudio には同梱していません (GPLv2)。入手先リンクから利用者ご自身で配置してください。
+
+### openMSX (V9990・内蔵 VDP・DOS2/SD)
+
+V9990・内蔵 VDP の起動と、DOS2/SD (Nextor) プレビューには openMSX を使います。GFX9000 (V9990) を載せた MSX turboR (Panasonic FS-A1GT) として起動します。
 
 1. [openMSX](https://openmsx.org/) の Windows 版をインストールします。次のどれかの場所にあれば自動で見つけます。
     - `C:\Program Files\openMSX\openmsx.exe` (インストーラーの既定の場所)
@@ -84,7 +101,17 @@ MSX のプレビューには、エミュレータ **openMSX** を使います。
 2. Panasonic FS-A1GT のシステム ROM `fs-a1gt_firmware.rom` と `fs-a1gt_kanjifont.rom` を、openMSX の `share\systemroms` フォルダ、または `ドキュメント\openMSX\share\systemroms` に置きます。
     - openMSX は ROM をファイル名ではなく中身で見分けます。VNStudio も同じ方法で確認し、足りないときは MSX を選んだときに不足しているファイル名を表示します。
 
-準備ができていないときは、MSX を選んだときに案内が表示されます。
+### V9968 (α版)
+
+V9968 は、HRa! 氏の V9968 カートリッジ (VRAM 4MB) と blueMSX+ 向けの、現行レジスタ仕様で配布します。
+
+- `config MSX char_sprite on` を書いた行で、作品の全背景・全立ち絵・選択肢画像・メニュー背景を 4MB VRAM へまとめて転送します。以後の `bg` / `show` はほぼ一瞬で切り替わります。転送中は次の行へ進まないので、前の行にローディング用の画像を表示しておきます (BGM は鳴り続けます)。詳しくは [`config MSX char_sprite`](../reference/commands/config.md#config-msx-char-sprite) を参照してください。
+- この機能には MSX ランタイム **0.93.7-beta**・共通ツール **0.93.7-beta** と、エディタ **0.93.7-beta** 以降が必要です。
+- 既知の制限 (α版):
+    - 起動には **blueMSX+** が必要です (旧 openMSX-V9968 フォークでは現行レジスタ仕様が動きません)。
+    - 実機 V9968 の R#18 (SET ADJUST) による画面シェイクは未検証です (blueMSX+ では動作確認済み)。
+    - V9968 の配布 ROM は暗号化されません (V9990 のみ暗号化します)。
+    - DOS2/SD (Nextor) は V9968 では選べません (V9990 専用です)。
 
 !!! note "MSX で使える機能"
     - `bg1` / `bgp1` で、背景に透過画像を重ねられます (透明／不透明の2段階)。エディタを **0.92.25-beta**、MSXランタイムを **0.92.25-beta** に更新し、プレビュー・配布用ROMを作り直してください。`clearbg1` または画像名のない `bgp1` で消せます。
@@ -96,7 +123,7 @@ MSX のプレビューには、エミュレータ **openMSX** を使います。
     - `clear` が立ち絵も消すようになり、イベントCGなどで前の立ち絵が残る問題を修正しました。
     - 4M ROM (標準ASCII16・セーブなし)、8M ROM (ASCII16-X)、DOS2/SD (Nextor・最大64MiB) のパッケージ形式を選べます。MSXを選ぶと右側の「Controls」に表示される「MSX package」で選択します。DOS2/SDはV9990専用です。
     - turboR向けVOICEの先読みと、DOS2/SDプレビューのopenMSX起動に対応しています。
-    - 映像は V9990 (GFX9000) 向けだけに対応しています。エディタの MSX の映像設定は「V9990」にしてください。
+    - 映像方式は V9990 (GFX9000)・V9968・内蔵 VDP (V9938/V9958) に対応しています。エディタの MSX の映像設定で選びます。
     - MSX では、録音した BGM (`bgm`) は再生できず、読み飛ばされます。MSX で曲を鳴らすには [`fm`](../reference/commands/audio.md#fm-play) コマンドで MML を再生してください。
     - MSX では、台詞の中の `\n` (改行) に対応していません。そのまま文字として表示されます (長い台詞は自動で折り返されます)。
     - 各コマンドの対応状況は [ランタイム対応表](../reference/runtime-support.md) を参照してください。

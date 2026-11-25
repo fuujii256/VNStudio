@@ -2,7 +2,7 @@
 
 # ランタイム対応表
 
-VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
+VNStudio 0.93.7-beta 時点の、ランタイムごとのコマンド対応状況です。△ の内容は、各コマンドのページの「対応ランタイム」欄に書いてあります。
 
 !!! warning "Windows (Unity) 以外のランタイムは α 版です"
     XZ80・MSX・PSP・X68000 のランタイムは α 版で、一部の機能が未実装です (下の表の × と —)。今後のバージョンで順次対応します。
@@ -14,7 +14,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## テキスト・待機
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [say](commands/text.md#say) | ○ | ○ | ○ | ○ | ○ |
 | [wait](commands/text.md#wait) | ○ | ○ | ○ | ○ | ○ |
@@ -24,7 +24,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## 背景
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [bg / bg0](commands/background.md#bg) | ○ | ○ | ○ | ○ | ○ |
 | [bg1〜bg3](commands/background.md#bg1) | ○ | △ | △ | △ | △ |
@@ -32,7 +32,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## キャラクター
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [show](commands/character.md#show) | ○ | ○ | ○ | ○ | △ |
 | [hide](commands/character.md#hide) | ○ | ○ | ○ | ○ | ○ |
@@ -40,7 +40,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## 画面演出
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [fade](commands/effect.md#fade) | ○ | ○ | △ | ○ | △ |
 | [white](commands/effect.md#white) | ○ | ○ | ○ | ○ | ○ |
@@ -49,7 +49,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## サウンド
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [bgm](commands/audio.md#bgm-play) | ○ | ○ | × | ○ | △ |
 | [se](commands/audio.md#se) | ○ | ○ | △ | ○ | △ |
@@ -58,7 +58,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## フロー制御・変数
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [label](commands/flow.md#label) | ○ | ○ | ○ | ○ | ○ |
 | [jump / goto](commands/flow.md#jump) | ○ | ○ | ○ | ○ | ○ |
@@ -70,14 +70,14 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## 選択肢
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [choice](commands/choice.md#choice) | ○ | ○ | ○ | ○ | ○ |
 | [ui_choice](commands/choice.md#ui-choice) | ○ | △ | △ | △ | △ |
 
 ## セーブ・メニュー・CG
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [save / load](commands/system.md#save) | ○ | × | ○ | × | ○ |
 | [savegrid / loadgrid](commands/system.md#savegrid) | ○ | × | ○ | ○ | ○ |
@@ -95,7 +95,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## 設定 (config)
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [config text font](commands/config.md#config-text-font) | ○ | × | △ | △ | △ |
 | [config text size](commands/config.md#config-text-size) | ○ | △ | △ | △ | △ |
@@ -116,10 +116,12 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 | [config sysmenu](commands/config.md#config-sysmenu) | ○ | × | × | × | × |
 | [config menu](commands/config.md#config-menu-mode) | ○ | × | × | × | × |
 | [config rightclick](commands/config.md#config-rightclick) | ○ | × | × | × | × |
+| [config MSX cache](commands/config.md#config-msx-cache) | × | × | ○ | × | × |
+| [config MSX char_sprite](commands/config.md#config-msx-char-sprite) | × | × | ○ | × | × |
 
 ## XZ80 専用設定 (configXZ80)
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [configXZ80 screenmode](commands/xz80.md#configxz80-screenmode) | × | ○ | × | × | × |
 | [configXZ80 combiMode / outputMode](commands/xz80.md#configxz80-combimode) | × | ○ | × | × | × |
@@ -127,7 +129,7 @@ VNStudio 0.93.6-beta 時点の、ランタイムごとのコマンド対応状�
 
 ## 旧コマンド・実験的機能
 
-| コマンド | Windows (Unity) | XZ80 | MSX (V9990) | PSP | X68000 |
+| コマンド | Windows (Unity) | XZ80 | MSX (V9990 / V9968) | PSP | X68000 |
 |---|:-:|:-:|:-:|:-:|:-:|
 | [OPNAPlay / OPLLPlay / FMStop](commands/legacy.md#opnaplay) | ○ | ○ | △ | × | △ |
 | [call 8puzzle](commands/legacy.md#call-8puzzle) | ○ | × | × | × | × |

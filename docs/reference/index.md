@@ -2,7 +2,7 @@
 
 # コマンドリファレンス
 
-VNStudio 0.93.6-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
+VNStudio 0.93.7-beta のスクリプトコマンドの一覧です。書き方の基本は [スクリプトの基本構文](syntax.md)、ランタイムごとの対応状況は [ランタイム対応表](runtime-support.md) を参照してください。
 
 ## [テキスト・待機](commands/text.md)
 
@@ -108,6 +108,8 @@ VNStudio 0.93.6-beta のスクリプトコマンドの一覧です。書き方�
 | [`config sysmenu <on|off> [text] [x] [y] [size] [scale]`](commands/config.md#config-sysmenu) | 画面右下のメニューボタンやオートボタンの表示と位置を設定します。 |
 | [`config menu mode <0|1>`](commands/config.md#config-menu-mode) | 標準／カスタムのメニューモードと、メニュー画面の遷移演出を設定します。 |
 | [`config rightclick <sysmenu|textoff>`](commands/config.md#config-rightclick) | 右クリックでメニューを開くか、UI を隠すかを設定します。 |
+| [`config MSX cache [キャラクター名 [フォルダ名 ...]]`](commands/config.md#config-msx-cache) | MSX 専用。透明部分を省いて立ち絵を空き VRAM へ先読みします。 |
+| [`config MSX char_sprite on|off`](commands/config.md#config-msx-char-sprite) | MSX の V9968 専用。on で立ち絵をスプライトで描きます。 |
 
 ## [XZ80 専用設定 (configXZ80)](commands/xz80.md)
 
