@@ -81,7 +81,10 @@ MSX の映像方式は、エディタの MSX 設定で **V9990 (GFX9000)** / **V
 
 V9968 は blueMSX+ で起動します (C-BIOS 同梱のため、システム ROM は不要です)。
 
-1. [blueMSX+ (Hesoten 版)](https://github.com/Hesoten/blueMSX-plus/releases) の **x64 版** zip をダウンロードします。
+!!! warning "blueMSX+ の版に注意"
+    V9968 は、動作確認済みの **blueMSX+ v3.2.0-alpha**(commit `62368a3`、zip 名 `blueMSX+-v3.1.1-develop-62368a3-x64.zip`、ファイルのプロパティの「製品バージョン」は `3.1.1`)をお使いください。**別の版(`v3.2.0-pre-alpha` など)では、V9968 の背景などの描画が崩れることがあります。** releases ページには複数の版が並ぶので、下記のタグのものを選んでください。
+
+1. [blueMSX+ v3.2.0-alpha (Hesoten 版)](https://github.com/Hesoten/blueMSX-plus/releases/tag/v3.2.0-alpha) の **x64 版** zip (`blueMSX+-v3.1.1-develop-62368a3-x64.zip`) をダウンロードします。
 2. 次のどれかに `blueMSX+.exe` が来るように展開します。
     - `%LOCALAPPDATA%\VNStudio\Tools\blueMSXplus\blueMSX+.exe`
     - `C:\Program Files\blueMSX+\blueMSX+.exe`
